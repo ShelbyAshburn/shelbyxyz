@@ -10,10 +10,45 @@ p{
     font-size: xx-large;
 }
 
+.header{
+    font-size:900%;
+    color:white;
+    text-shadow: 5px 5px #011a2e;
+    position:absolute;
+    left:300px;
+    top: 115px;
+}
 
-#orange{
-    color:#fd812f;
+.bars{
+
 }
-#blue{
-    color:#1595fd;
+.orange-bar{
+    position: absolute;
+    z-index: -1;
+    background: #fd5415;
+    width: 87%;
+    left: 0px;
+    top: 200px;
+    height: 100px;
 }
+
+.blue-bar{
+    position: absolute;
+    z-index: -2;
+    background: #1595fd;
+    width: 89%;
+    left: 10px;
+    top: 290px;
+    height: 100px;
+}
+
+.imgage{
+
+}
+
+#arms_folded{
+    position: absolute;
+    top: 150px;
+    right:0;
+}
+
