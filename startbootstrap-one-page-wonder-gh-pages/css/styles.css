@@ -10919,3 +10919,8 @@ header.masthead .bg-circle-4 {
     font-size: 4rem;
   }
 }
+
+#coming-soon{
+  position:relative;
+  padding:20px;
+}
