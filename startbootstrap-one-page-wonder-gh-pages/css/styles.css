@@ -10919,7 +10919,7 @@ header.masthead .bg-circle-4 {
     font-size: 4rem;
   }
 }
-
+/*changes to non-bootstrap classes and id's*/
 #coming-soon{
   position:relative;
   padding:20px;
