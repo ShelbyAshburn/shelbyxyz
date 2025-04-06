@@ -10920,7 +10920,10 @@ header.masthead .bg-circle-4 {
   }
 }
 /*changes to non-bootstrap classes and id's*/
-#coming-soon{
-  position:relative;
-  padding:20px;
+#ct{
+  text-align:center;
+  font-size: 6.0em;
+} 
+#app-comment{
+  text-align:center;
 }

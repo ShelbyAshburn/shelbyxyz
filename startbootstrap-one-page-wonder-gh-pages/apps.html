@@ -1,0 +1,73 @@
+<!--Welcome too the app page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="the portfolio." />
+    <title>The App Page</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="ShelbyXYZ/images">
+    
+</head>
+<body  id="page-top" onload=display_ct();>
+  <h1 class="header">APPS</h1>
+  <div id="clock">
+    <div>
+        <p id="ct"></p>
+    </div>
+  </div>
+  <p id="app-comment">The screen will stay awake while this page is active.</p>
+  <script>
+    // Check if the Wake Lock API is supported
+if ('wakeLock' in navigator) {
+  let wakeLock = null;
+
+  const requestWakeLock = async () => {
+    try {
+      wakeLock = await navigator.wakeLock.request('screen');
+      console.log('Screen wake lock acquired');
+    } catch (err) {
+      console.error(`Wake Lock request failed: ${err.name}, ${err.message}`);
+    }
+  };
+
+  const releaseWakeLock = () => {
+    if (wakeLock) {
+      wakeLock.release().then(() => {
+        console.log('Screen wake lock released');
+        wakeLock = null;
+      });
+    }
+  };
+
+  // Request wake lock when the page is active
+  requestWakeLock();
+
+  // Optionally, release wake lock when the page is hidden
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') {
+      requestWakeLock();
+    } else {
+      releaseWakeLock();
+    }
+  });
+} else {
+  console.log('Wake Lock API not supported on this browser.');
+}
+
+  </script>
+  
+</body>
+<footer>
+    
+</footer>
+<script src="js/scripts.js"></script>
+</html>
