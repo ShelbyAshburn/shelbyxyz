@@ -10883,10 +10883,10 @@ header.masthead .bg-circle {
   background: linear-gradient(0deg, #ab4c02 0%, #fd812f 100%);
 }
 header.masthead .bg-circle-1 {
-  height: 90rem;
-  width: 90rem;
-  bottom: -55rem;
-  left: -55rem;
+  height: 70rem;
+  width: 70rem;
+  bottom: -35rem;
+  left: -35rem;
 }
 header.masthead .bg-circle-2 {
   height: 50rem;
