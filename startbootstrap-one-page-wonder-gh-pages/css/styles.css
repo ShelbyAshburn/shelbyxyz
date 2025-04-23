@@ -10,6 +10,7 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ /*Most changes below are minor like colors. Styles for new content starts at the end of the file*/
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10883,26 +10884,26 @@ header.masthead .bg-circle {
   background: linear-gradient(0deg, #ab4c02 0%, #fd812f 100%);
 }
 header.masthead .bg-circle-1 {
-  height: 70rem;
-  width: 70rem;
+  height: 65rem;
+  width: 65rem;
   bottom: -35rem;
   left: -35rem;
 }
 header.masthead .bg-circle-2 {
-  height: 50rem;
-  width: 50rem;
+  height: 45rem;
+  width: 45rem;
   top: -25rem;
   right: -25rem;
 }
 header.masthead .bg-circle-3 {
-  height: 20rem;
-  width: 20rem;
+  height: 25rem;
+  width: 25rem;
   bottom: -10rem;
   right: 5%;
 }
 header.masthead .bg-circle-4 {
-  height: 30rem;
-  width: 30rem;
+  height: 20rem;
+  width: 20rem;
   top: -5rem;
   right: 35%;
 }
@@ -10926,4 +10927,35 @@ header.masthead .bg-circle-4 {
 } 
 #app-comment{
   text-align:center;
+}
+/*Wave effect on apps page*/
+.bg-rainbow {
+  animation:slide 10s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, black 49%, var(--bs-body-bg) 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.3;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2-rainbow {
+  animation-direction:alternate-reverse;
+  animation-duration:10s;
+}
+
+.bg3-rainbow {
+  animation-duration:5s;
+}
+
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
 }
