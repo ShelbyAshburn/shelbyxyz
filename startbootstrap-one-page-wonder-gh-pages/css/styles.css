@@ -10930,8 +10930,8 @@ header.masthead .bg-circle-4 {
 }
 /*Wave effect on apps page*/
 .bg-rainbow {
-  animation:slide 10s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, black 49%, var(--bs-body-bg) 50%);
+  animation:slide 20s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #1e5971 40%, var(--bs-body-bg) 50%);
   bottom:0;
   left:-50%;
   opacity:.3;
@@ -10943,7 +10943,7 @@ header.masthead .bg-circle-4 {
 
 .bg2-rainbow {
   animation-direction:alternate-reverse;
-  animation-duration:10s;
+  animation-duration:18s;
 }
 
 .bg3-rainbow {
