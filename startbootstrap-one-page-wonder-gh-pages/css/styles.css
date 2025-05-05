@@ -10931,7 +10931,7 @@ header.masthead .bg-circle-4 {
 /*Wave effect on apps page*/
 .bg-rainbow {
   animation:slide 20s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, #1e5971 40%, var(--bs-body-bg) 50%);
+  background-image: linear-gradient(-60deg, #1e5971 48%, var(--bs-body-bg) 50%);
   bottom:0;
   left:-50%;
   opacity:.3;
@@ -10947,7 +10947,7 @@ header.masthead .bg-circle-4 {
 }
 
 .bg3-rainbow {
-  animation-duration:5s;
+  animation-duration:15s;
 }
 
 
@@ -10957,5 +10957,48 @@ header.masthead .bg-circle-4 {
   }
   100% {
     transform:translateX(25%);
+  }
+}
+
+/*TIcker styles*/
+.t2ZMXSschmty2FuK{
+  position: relative;
+  bottom: 50px;
+}
+
+/*The styles for the news links*/
+.news-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.news-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.news-item:hover{
+  background-color: #eef;
+}
+/*tablet view*/
+@media (max-width: 900px) {
+  .news-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*mobile view*/
+@media (max-width: 600px){
+  .news-grid {
+    grid-template-columns: 1fr;
   }
 }
