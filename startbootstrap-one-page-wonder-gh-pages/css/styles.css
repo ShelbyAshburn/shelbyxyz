@@ -10974,7 +10974,10 @@ header.masthead .bg-circle-4 {
   max-width: 1000px;
   margin: auto;
 }
+.news-item-heading{
+  font-size:2em !important;
 
+}
 .news-item{
   display: flex;
   align-items: center;
@@ -10988,7 +10991,7 @@ header.masthead .bg-circle-4 {
 }
 
 .news-item:hover{
-  background-color: #eef;
+  font-size: 150%;
 }
 /*tablet view*/
 @media (max-width: 900px) {
