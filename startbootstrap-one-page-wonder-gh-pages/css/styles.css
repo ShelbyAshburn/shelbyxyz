@@ -10931,7 +10931,7 @@ header.masthead .bg-circle-4 {
 /*Wave effect on apps page*/
 .bg-rainbow {
   animation:slide 20s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, #1e5971 48%, var(--bs-body-bg) 50%);
+  background-image: linear-gradient(-45deg, #1b386f 45%, var(--bs-body-bg) 50%);
   bottom:0;
   left:-50%;
   opacity:.3;
@@ -10960,17 +10960,12 @@ header.masthead .bg-circle-4 {
   }
 }
 
-/*TIcker styles*/
-.t2ZMXSschmty2FuK{
-  position: relative;
-  bottom: 50px;
-}
 
 /*The styles for the news links*/
 .news-grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  gap: 10px;
   max-width: 1000px;
   margin: auto;
 }
@@ -10982,7 +10977,7 @@ header.masthead .bg-circle-4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 120px;
+  height: 80px;
   text-decoration: none;
   color: #fff;
   font-weight: bold;
@@ -10991,7 +10986,8 @@ header.masthead .bg-circle-4 {
 }
 
 .news-item:hover{
-  font-size: 150%;
+  font-size: 175%;
+  color:#ab4c02;
 }
 /*tablet view*/
 @media (max-width: 900px) {
@@ -11005,3 +11001,52 @@ header.masthead .bg-circle-4 {
     grid-template-columns: 1fr;
   }
 }
+/*Animation of the orange balls on the index page*/
+@keyframes move{
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.bg-circle {
+  position: absolute;
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 50%;
+  backface-visibility: hidden;
+  animation: move linear infinite;
+}
+
+/* Using a custom attribute for variability */
+.bg-circle-1 {
+  top:5%;/*77*/
+  left: 8%;/*88*/
+  animation-duration: 40s;
+  animation-delay: -3s;
+  transform-origin: 16vw -2vh;
+} 
+.bg-circle-2 {
+  top: 12%;/*42*/
+  left: 2%;
+  animation-duration: 53s;
+  animation-delay: -29s;
+  transform-origin: -19vw 21vh;
+  
+}
+.bg-circle-3 {
+  top: 2%;/*28*/
+  left: 18%;
+  animation-duration: 49s;
+  animation-delay: -8s;
+  transform-origin: -22vw 3vh;
+}
+.bg-circle-4 {
+  top: 10%;/*50*/
+  left: 79%;
+  animation-duration: 26s;
+  animation-delay: -21s;
+  transform-origin: -17vw -6vh;
+  
+}
+
+
